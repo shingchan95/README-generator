@@ -58,8 +58,7 @@ inquirer
   
 const htmlrender= (answers)=> {
    read_me = `
-   # <Your-Project-Title>
-   ${answers.project_title}
+   #${answers.project_title} 
    ${license_img}
 
    ## Description

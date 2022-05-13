@@ -28,7 +28,7 @@ inquirer
         type: "input",
         message: "Provide ways to contribute",
         },
-        { name:"test",
+        { name:"test_s",
         type: "input",
         message: "Provide examples on how to run them here",
         },
@@ -43,26 +43,26 @@ inquirer
         type: "input",
         message: "Provide Github username for Questions.",
         },
+
         {name:"email",
         type: "input",
         message: "Provide email for Questions.",
-        },,
+        },
 
   ])
 
   .then((answers) => {
-    licenseChoice(answers)
+     licenseChoice(answers)
       htmlrender(answers)
   })
   
 const htmlrender= (answers)=> {
-   read_me =  `
-   # <Your-Project-Title>
-   ${project_title}
-   ${license}
+   read_me = `# <Your-Project-Title>
+   ${answers.project_title}
+   ${answers.license}
 
    ## Description
-   ${description}
+   ${answers.description}
 
    ## Table of Contents
   - [Installation](#installation)
@@ -70,21 +70,21 @@ const htmlrender= (answers)=> {
   - [License](#license)
 
    ## Installation
-   ${installation}
+   ${answers.installation}
    ## Usage
-   ${usage}
+   ${answers.usage}
    
    ## Contributing
-   ${Contributing}
+   ${answers.Contributing}
    ## Tests
-   ${test}
+   ${answers.test_s}
    ## License
-   ${license_des}
+   ${answers.license_des}
 
 
    ## Questions
 
-   further question please visit or contact https://github.com/${github}, ${email}
+   further question please visit or contact https://github.com/${answers.github}, ${answers.email}
    `
 
     const fs = require('fs');

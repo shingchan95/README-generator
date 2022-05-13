@@ -79,12 +79,12 @@ const htmlrender= (answers)=> {
    ## Tests
    ${answers.test_s}
    ## License
-   ${answers.license_des}
+   ${license_des}
 
 
    ## Questions
 
-   further question please visit or contact https://github.com/${answers.github}, ${answers.email}
+   further question please visit https://github.com/${answers.github}, or contact ${answers.email}
    `
 
     const fs = require('fs');

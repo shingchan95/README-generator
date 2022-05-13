@@ -1,9 +1,9 @@
 
-   # title 
+   # This is the Title of the project 
    ![license](https://img.shields.io/badge/license-MLT%20license-green)
 
    ## Description
-   sh
+   here is a short description
 
    ## Table of Contents
   - [Installation](#installation)
@@ -11,19 +11,19 @@
   - [License](#license)
 
    ## Installation
-   steps
+   here are the steps required to install
    ## Usage
-   ins
+   here are the instructions and examples for use
    
    ## Contributing
-   ways
+   here are the ways to contribute
    ## Tests
-   example
+   please check this exmaple on how to run
    ## License
-   undefined
+   Licensed under the MIT License
 
 
    ## Questions
 
-   further question please visit or contact https://github.com/shingchan95, aosdk@gmail.com
+   further question please visit https://github.com/shingchan95, or contact test@gmail.com
    

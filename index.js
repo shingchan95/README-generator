@@ -75,15 +75,15 @@ const htmlrender= (answers)=> {
 const licenseChoice =(answers)=>{
 
     if (answers.license === "Apache License 2.0"){
-    license= "![license]https://img.shields.io/badge/license-Apache%20License%202.0-green"
+    license= "![license](https://img.shields.io/badge/license-Apache%20License%202.0-green)"
   } if (answers.license === "GNU General Public License v2.0"){
-    license= "![license]https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v2.0-green"
+    license= "![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v2.0-green)"
   } if (answers.license === "GNU General Public License v3.0"){
-    license= "![license]https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-green"
+    license= "![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-green)"
   } if (answers.license === "ISC License"){
-    license= "![license]https://img.shields.io/badge/license-ISC%20license-green"
+    license= "![license](https://img.shields.io/badge/license-ISC%20license-green)"
   } if (answers.license === "MIT License"){
-    license= "![license]https://img.shields.io/badge/license-MLT%20license-green"
+    license= "![license](https://img.shields.io/badge/license-MLT%20license-green)"
   }if (answers.license === "BLANK"){
     license=""
   }

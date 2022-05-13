@@ -1,9 +1,9 @@
 
-   #title 
+   # title 
    ![license](https://img.shields.io/badge/license-MLT%20license-green)
 
    ## Description
-   short description
+   sh
 
    ## Table of Contents
   - [Installation](#installation)
@@ -13,7 +13,7 @@
    ## Installation
    steps
    ## Usage
-   instructions
+   ins
    
    ## Contributing
    ways
@@ -25,5 +25,5 @@
 
    ## Questions
 
-   further question please visit or contact https://github.com/shingchan95, chanhei888:gmail.com
+   further question please visit or contact https://github.com/shingchan95, aosdk@gmail.com
    

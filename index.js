@@ -1,4 +1,4 @@
-var license =""
+var license_img =""
 var license_des=""
 
 var inquirer = require('inquirer');
@@ -57,9 +57,10 @@ inquirer
   })
   
 const htmlrender= (answers)=> {
-   read_me = `# <Your-Project-Title>
+   read_me = `
+   # <Your-Project-Title>
    ${answers.project_title}
-   ${answers.license}
+   ${license_img}
 
    ## Description
    ${answers.description}
@@ -97,17 +98,17 @@ const htmlrender= (answers)=> {
 const licenseChoice =(answers)=>{
 
     if (answers.license === "Apache License 2.0"){
-    license= "![license](https://img.shields.io/badge/license-Apache%20License%202.0-green)"
+    license_img= "![license](https://img.shields.io/badge/license-Apache%20License%202.0-green)"
   } if (answers.license === "GNU General Public License v2.0"){
-    license= "![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v2.0-green)"
+    license_img= "![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v2.0-green)"
   } if (answers.license === "GNU General Public License v3.0"){
-    license= "![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-green)"
+    license_img= "![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-green)"
   } if (answers.license === "ISC License"){
-    license= "![license](https://img.shields.io/badge/license-ISC%20license-green)"
+    license_img= "![license](https://img.shields.io/badge/license-ISC%20license-green)"
   } if (answers.license === "MIT License"){
-    license= "![license](https://img.shields.io/badge/license-MLT%20license-green)"
+    license_img= "![license](https://img.shields.io/badge/license-MLT%20license-green)"
   }if (answers.license === "BLANK"){
-    license=""
+    license_img=""
   }
   license_des= "Licensed under the " +answers.license
 }

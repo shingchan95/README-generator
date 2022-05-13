@@ -1,4 +1,5 @@
 var license =""
+var license_des=""
 
 var inquirer = require('inquirer');
 inquirer
@@ -11,6 +12,11 @@ inquirer
         { name:"description",
         type: "input",
         message: "Provide a short description of your project.",
+        },
+
+        { name:"installation",
+        type: "input",
+        message: "Provide Steps required to install your project.",
         },
 
         { name:"usage",
@@ -29,9 +35,18 @@ inquirer
         
         {name:"license",
         type: "list",
-        message: "Please choose a license to proceed.",
+        message: "Choose a license to proceed.",
         choices: [ "Apache License 2.0", "GNU General Public License v2.0","GNU General Public License v3.0","ISC License","MIT License","BLANK"]
         },
+
+        {name:"github",
+        type: "input",
+        message: "Provide Github username for Questions.",
+        },
+        {name:"email",
+        type: "input",
+        message: "Provide email for Questions.",
+        },,
 
   ])
 
@@ -43,26 +58,33 @@ inquirer
 const htmlrender= (answers)=> {
    read_me =  `
    # <Your-Project-Title>
+   ${project_title}
+   ${license}
 
    ## Description
-   
+   ${description}
+
    ## Table of Contents
-   
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
 
    ## Installation
-   
+   ${installation}
    ## Usage
-  
+   ${usage}
    
    ## Contributing
-   
+   ${Contributing}
    ## Tests
+   ${test}
    ## License
-   ${license}
+   ${license_des}
+
+
    ## Questions
+
+   further question please visit or contact https://github.com/${github}, ${email}
    `
 
     const fs = require('fs');
@@ -87,4 +109,5 @@ const licenseChoice =(answers)=>{
   }if (answers.license === "BLANK"){
     license=""
   }
+  license_des= "Licensed under the " +answers.license
 }

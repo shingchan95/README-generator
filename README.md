@@ -1,5 +1,6 @@
 
    # <Your-Project-Title>
+   ![license](https://img.shields.io/badge/license-ISC%20license-green)
 
    ## Description
    
@@ -18,6 +19,8 @@
    
    ## Tests
    ## License
-   ![license](https://img.shields.io/badge/license-ISC%20license-green)
+   Licensed under the ISC License
+
+
    ## Questions
    
